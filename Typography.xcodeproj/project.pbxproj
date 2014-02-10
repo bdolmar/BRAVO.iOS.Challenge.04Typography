@@ -15,13 +15,16 @@
 		580F674118858E88005F118C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 580F674018858E88005F118C /* main.m */; };
 		580F674518858E88005F118C /* NRDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 580F674418858E88005F118C /* NRDAppDelegate.m */; };
 		580F674818858E88005F118C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 580F674618858E88005F118C /* Main.storyboard */; };
+		580F674B18858E88005F118C /* NRDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 580F674A18858E88005F118C /* NRDViewController.m */; };
 		580F675418858E88005F118C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580F675318858E88005F118C /* XCTest.framework */; };
 		580F675518858E88005F118C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580F673418858E88005F118C /* Foundation.framework */; };
 		580F675618858E88005F118C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580F673818858E88005F118C /* UIKit.framework */; };
 		580F675E18858E88005F118C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 580F675C18858E88005F118C /* InfoPlist.strings */; };
 		580F676018858E88005F118C /* TypographyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 580F675F18858E88005F118C /* TypographyTests.m */; };
 		580F676A1885904E005F118C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580F67691885904E005F118C /* Images.xcassets */; };
-		5897C431188DCEF70026735D /* NRDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5897C430188DCEF70026735D /* NRDViewController.m */; };
+		580F676F1885CC98005F118C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580F676E1885CC98005F118C /* CoreText.framework */; };
+		5897C4281886EC2E0026735D /* UIFontDescriptor+Nerdery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5897C4271886EC2E0026735D /* UIFontDescriptor+Nerdery.m */; };
+		5897C42E188DC05C0026735D /* NSAttributedString+Nerdery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5897C42D188DC05C0026735D /* NSAttributedString+Nerdery.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,14 +49,19 @@
 		580F674318858E88005F118C /* NRDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRDAppDelegate.h; sourceTree = "<group>"; };
 		580F674418858E88005F118C /* NRDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRDAppDelegate.m; sourceTree = "<group>"; };
 		580F674718858E88005F118C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		580F674918858E88005F118C /* NRDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NRDViewController.h; sourceTree = "<group>"; };
+		580F674A18858E88005F118C /* NRDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NRDViewController.m; sourceTree = "<group>"; };
 		580F675218858E88005F118C /* TypographyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TypographyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		580F675318858E88005F118C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		580F675B18858E88005F118C /* TypographyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TypographyTests-Info.plist"; sourceTree = "<group>"; };
 		580F675D18858E88005F118C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		580F675F18858E88005F118C /* TypographyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypographyTests.m; sourceTree = "<group>"; };
 		580F67691885904E005F118C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5897C42F188DCEF70026735D /* NRDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRDViewController.h; sourceTree = "<group>"; };
-		5897C430188DCEF70026735D /* NRDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRDViewController.m; sourceTree = "<group>"; };
+		580F676E1885CC98005F118C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		5897C4261886EC2E0026735D /* UIFontDescriptor+Nerdery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFontDescriptor+Nerdery.h"; sourceTree = "<group>"; };
+		5897C4271886EC2E0026735D /* UIFontDescriptor+Nerdery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFontDescriptor+Nerdery.m"; sourceTree = "<group>"; };
+		5897C42C188DC05C0026735D /* NSAttributedString+Nerdery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Nerdery.h"; sourceTree = "<group>"; };
+		5897C42D188DC05C0026735D /* NSAttributedString+Nerdery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Nerdery.m"; sourceTree = "<group>"; };
 		E36415D6A6B341D9A87477C0 /* Settings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Typography/Resources/Settings.bundle; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -62,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580F676F1885CC98005F118C /* CoreText.framework in Frameworks */,
 				580F673718858E88005F118C /* CoreGraphics.framework in Frameworks */,
 				580F673918858E88005F118C /* UIKit.framework in Frameworks */,
 				580F673518858E88005F118C /* Foundation.framework in Frameworks */,
@@ -138,6 +147,7 @@
 		580F673318858E88005F118C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				580F676E1885CC98005F118C /* CoreText.framework */,
 				580F673418858E88005F118C /* Foundation.framework */,
 				580F673618858E88005F118C /* CoreGraphics.framework */,
 				580F673818858E88005F118C /* UIKit.framework */,
@@ -211,8 +221,8 @@
 		9174ABC28A88400BB92F71F2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5897C42F188DCEF70026735D /* NRDViewController.h */,
-				5897C430188DCEF70026735D /* NRDViewController.m */,
+				580F674918858E88005F118C /* NRDViewController.h */,
+				580F674A18858E88005F118C /* NRDViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -234,6 +244,10 @@
 		CA335AB79BDF457DBF194A16 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				5897C4261886EC2E0026735D /* UIFontDescriptor+Nerdery.h */,
+				5897C4271886EC2E0026735D /* UIFontDescriptor+Nerdery.m */,
+				5897C42C188DC05C0026735D /* NSAttributedString+Nerdery.h */,
+				5897C42D188DC05C0026735D /* NSAttributedString+Nerdery.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -370,7 +384,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5897C431188DCEF70026735D /* NRDViewController.m in Sources */,
+				5897C42E188DC05C0026735D /* NSAttributedString+Nerdery.m in Sources */,
+				580F674B18858E88005F118C /* NRDViewController.m in Sources */,
+				5897C4281886EC2E0026735D /* UIFontDescriptor+Nerdery.m in Sources */,
 				580F674118858E88005F118C /* main.m in Sources */,
 				580F674518858E88005F118C /* NRDAppDelegate.m in Sources */,
 			);
