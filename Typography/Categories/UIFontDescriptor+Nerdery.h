@@ -10,6 +10,6 @@
 
 @interface UIFontDescriptor (Nerdery)
 
-- (UIFontDescriptor *)fontDescriptorWithProportionalNumberSpacing;
+- (UIFontDescriptor *)fontDescriptorWithUpperCaseNumbers;
 
 @end

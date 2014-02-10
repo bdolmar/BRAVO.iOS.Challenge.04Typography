@@ -22,7 +22,6 @@
 		580F675E18858E88005F118C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 580F675C18858E88005F118C /* InfoPlist.strings */; };
 		580F676018858E88005F118C /* TypographyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 580F675F18858E88005F118C /* TypographyTests.m */; };
 		580F676A1885904E005F118C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580F67691885904E005F118C /* Images.xcassets */; };
-		580F676D188592C8005F118C /* UIFont+Nerdery.m in Sources */ = {isa = PBXBuildFile; fileRef = 580F676C188592C8005F118C /* UIFont+Nerdery.m */; };
 		580F676F1885CC98005F118C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580F676E1885CC98005F118C /* CoreText.framework */; };
 		5897C4281886EC2E0026735D /* UIFontDescriptor+Nerdery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5897C4271886EC2E0026735D /* UIFontDescriptor+Nerdery.m */; };
 		5897C42E188DC05C0026735D /* NSAttributedString+Nerdery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5897C42D188DC05C0026735D /* NSAttributedString+Nerdery.m */; };
@@ -58,8 +57,6 @@
 		580F675D18858E88005F118C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		580F675F18858E88005F118C /* TypographyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypographyTests.m; sourceTree = "<group>"; };
 		580F67691885904E005F118C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		580F676B188592C8005F118C /* UIFont+Nerdery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Nerdery.h"; sourceTree = "<group>"; };
-		580F676C188592C8005F118C /* UIFont+Nerdery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Nerdery.m"; sourceTree = "<group>"; };
 		580F676E1885CC98005F118C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		5897C4261886EC2E0026735D /* UIFontDescriptor+Nerdery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFontDescriptor+Nerdery.h"; sourceTree = "<group>"; };
 		5897C4271886EC2E0026735D /* UIFontDescriptor+Nerdery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFontDescriptor+Nerdery.m"; sourceTree = "<group>"; };
@@ -247,8 +244,6 @@
 		CA335AB79BDF457DBF194A16 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				580F676B188592C8005F118C /* UIFont+Nerdery.h */,
-				580F676C188592C8005F118C /* UIFont+Nerdery.m */,
 				5897C4261886EC2E0026735D /* UIFontDescriptor+Nerdery.h */,
 				5897C4271886EC2E0026735D /* UIFontDescriptor+Nerdery.m */,
 				5897C42C188DC05C0026735D /* NSAttributedString+Nerdery.h */,
@@ -389,7 +384,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580F676D188592C8005F118C /* UIFont+Nerdery.m in Sources */,
 				5897C42E188DC05C0026735D /* NSAttributedString+Nerdery.m in Sources */,
 				580F674B18858E88005F118C /* NRDViewController.m in Sources */,
 				5897C4281886EC2E0026735D /* UIFontDescriptor+Nerdery.m in Sources */,

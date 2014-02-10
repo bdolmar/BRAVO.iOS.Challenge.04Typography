@@ -10,10 +10,10 @@
 
 @interface NSAttributedString (Nerdery)
 
-- (NSMutableAttributedString *)attributedStringWithKerning:(NSNumber *)kernValue;
+- (NSAttributedString *)attributedStringWithKerning:(CGFloat)kernValue;
 
-- (NSMutableAttributedString *)attributedStringWithKerningInPhotoshopUnits:(NSNumber *)kernValue;
+- (NSAttributedString *)attributedStringWithKerningInPhotoshopUnits:(CGFloat)kernValue;
 
-- (NSMutableAttributedString *)attributedStringLineHeight:(NSNumber *)lineHeight;
+- (NSAttributedString *)attributedStringLineHeight:(CGFloat)lineHeight;
 
 @end

@@ -11,18 +11,18 @@
 
 @implementation UIFontDescriptor (Nerdery)
 
-- (UIFontDescriptor *)fontDescriptorWithProportionalNumberSpacing
+- (UIFontDescriptor *)fontDescriptorWithUpperCaseNumbers
 {
-    NSArray *timeFeatureSettings = @[
-                                     @{
-                                         UIFontFeatureTypeIdentifierKey: @(kNumberSpacingType),
-                                         UIFontFeatureSelectorIdentifierKey: @(kProportionalNumbersSelector)
-                                         },
-                                     @{
-                                         UIFontFeatureTypeIdentifierKey: @(kNumberCaseType),
-                                         UIFontFeatureSelectorIdentifierKey: @(kUpperCaseNumbersSelector)
-                                         }];
-    return [self fontDescriptorByAddingAttributes: @{UIFontDescriptorFeatureSettingsAttribute: timeFeatureSettings }];
+    NSArray *numeralFeatureSettings = @[
+                                         @{
+                                             UIFontFeatureTypeIdentifierKey: @(kNumberSpacingType),
+                                             UIFontFeatureSelectorIdentifierKey: @(kProportionalNumbersSelector)
+                                             },
+                                         @{
+                                             UIFontFeatureTypeIdentifierKey: @(kNumberCaseType),
+                                             UIFontFeatureSelectorIdentifierKey: @(kUpperCaseNumbersSelector)
+                                             }];
+    return [self fontDescriptorByAddingAttributes: @{UIFontDescriptorFeatureSettingsAttribute: numeralFeatureSettings}];
 }
 
 

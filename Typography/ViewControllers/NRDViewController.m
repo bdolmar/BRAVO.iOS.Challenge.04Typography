@@ -22,28 +22,41 @@
 
 #pragma mark - View Controller Methods
 
-- (void)viewDidLoad
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidLoad];
+    [super viewWillAppear:animated];
     
+    [self updateLabelFont];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(notificationReceived:)
+                                                 name:UIContentSizeCategoryDidChangeNotification
+                                               object:nil];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)notificationReceived:(NSNotification *)notification
+{
+    if ([notification.name isEqualToString:UIContentSizeCategoryDidChangeNotification]) {
+        [self updateLabelFont];
+    }
+}
+
+- (void)updateLabelFont
+{
     UIFontDescriptor *headlineDescriptor = [UIFontDescriptor preferredFontDescriptorWithTextStyle:UIFontTextStyleHeadline];
     UIFontDescriptor *hoeflerText = [UIFontDescriptor fontDescriptorWithName:@"Hoefler Text" size:headlineDescriptor.pointSize];
-    NSLog(@"hoeflerText: %@", hoeflerText);
     
-    hoeflerText = [hoeflerText fontDescriptorWithProportionalNumberSpacing];
+    hoeflerText = [hoeflerText fontDescriptorWithUpperCaseNumbers];
     self.headlineLabel.font = [UIFont fontWithDescriptor:hoeflerText size:0.0];
     self.headlineLabel.textAlignment = NSTextAlignmentCenter;
     self.headlineLabel.text = @"There are 31,536,000\nseconds in a year.";
-    self.headlineLabel.attributedText = [[self.headlineLabel.attributedText attributedStringWithKerningInPhotoshopUnits:@(-20)] attributedStringLineHeight:@(hoeflerText.pointSize*1.15)];
-    [self.headlineLabel sizeToFit];
+    self.headlineLabel.attributedText = [[self.headlineLabel.attributedText attributedStringWithKerningInPhotoshopUnits:-20] attributedStringLineHeight:self.headlineLabel.font.pointSize*1.15];
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 
 @end
